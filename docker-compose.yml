@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  cell-fetcher:
+    image: cell-fetcher
+    build: .
+    command: tail -F /dev/null
+    volumes:
+      - ./:/home/cellfetcher/app
