@@ -49,3 +49,12 @@ Download the credentials JSON file
   - On Credential Type select "User data"
   - On Oauth Consent Screen fill required
   - On Scope, no need to select anything
+
+
+## Building
+
+```
+podman build --platform linux/amd64 . -t rodleyllc/gspread-cell-fetcher:latest
+podman push rodleyllc/gspread-cell-fetcher:latest
+
+```
